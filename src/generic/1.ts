@@ -2,11 +2,12 @@
   Є функція getPromise(), яка повертає проміс, що дозволяється в масив, що містить рядки та числа. 
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
-let arr: Array<string | number> = [];
 
-function getPromise() {
+type arr = Array<string | number>;
+
+function getPromise(): Promise<arr> {
   return new Promise((resolve) => {
-    resolve(arr);
+    resolve(["Text", 50]);
   });
 }
 

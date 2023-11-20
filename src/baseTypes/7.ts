@@ -14,8 +14,5 @@ enum Role {
 }
 
 function isWeekend(day: Role): boolean {
-  if (day === "SATURDAY" || "SUNDAY") {
-    return true;
-  }
-  return false;
+  return day === "SATURDAY" || day === "SUNDAY";
 }
